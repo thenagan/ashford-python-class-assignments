@@ -1,0 +1,17 @@
+# Primary colors assignment
+# user inputs two primary colors and gets output of what color the mix makes
+# User input must be 'red', 'blue' or 'yellow
+# Entries are not case-sensitive
+first_color = input('Enter the name of one primary color. red, blue or yellow\n')
+
+second_color = input('Enter second primary color that you did not enter in the first prompt\n')
+
+if first_color == second_color:
+    print('You cannot enter the same color twice, we are mixing colors')
+elif ((first_color) and (second_color) in (['red', 'blue', 'RED', 'BLUE'])):
+    print('Your mixed color is Purple')
+elif ((first_color) and (second_color) in (['red', 'yellow', 'RED', 'YELLOW'])):
+    print('Your mixed color is Orange')
+elif ((first_color) and (second_color) in (['blue', 'yellow', 'BLUE', 'YELLOW'])):
+    print('Your mixed color is Green')
+else: print("You did not enter a primary color combination")
